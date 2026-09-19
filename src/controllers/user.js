@@ -24,7 +24,7 @@ const userRegistered = async (req, res) => {
       email: req.body.email,
       phone: req.body.phone,
       password: hashedPassword,
-      role: "user",
+      role: req.body.role,
     };
 
     users.push(newUser);
