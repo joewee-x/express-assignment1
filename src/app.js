@@ -5,7 +5,7 @@ const userRoute = require("./routes/user.route");
 const role = require("./routes/role.route");
 const productRoute = require("./routes/product.route");
 const logger = require("./middleware/logger");
-const limiter = require("./middlewares/rateLimiter");
+const limiter = require("./middleware/rateLimiter");
 
 
 app.get("/", (req, res) => {
