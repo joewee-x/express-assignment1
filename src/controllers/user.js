@@ -29,11 +29,6 @@ const userRegistered = async (req, res) => {
 
     users.push(newUser);
 
-    console.log(
-      `${newUser.name} your account has been registered successfully`,
-    );
-    console.log(users);
-
     res.status(200).json({
       message: "user registered successfully",
       user: {
@@ -41,8 +36,7 @@ const userRegistered = async (req, res) => {
         name: newUser.name,
         email: newUser.email,
         phone: newUser.phone,
-        role: newUser.role,
-        password: newUser.password,
+        role: newUser.role
       },
     });
   }
